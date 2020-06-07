@@ -190,6 +190,24 @@ And they matter a great deal to a mobile developer. Precisely because mobile dev
 
 
 # * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+Being able to optimize storage to work with the presence or absence of characters in a text field is a powerful behind the scenes tool, but databases have intelligence built into them.
+
+In most database engines today, the designer can specify many attributes of a field such as following:
+
+- Name. A name that is used internally is often quite different from the name that appears in t he user interface.
+- Type. You can specify that a certain database field must be an integer or a string or any other type that the database supports.
+- Optionality. Some fields are optional, and you can specify that when you set up a database. (many people have a car with a license number; many other people do not own cars)
+- Default values. A data base can be set to provide a default value - either a simple value or a calculated value based on other data in the database.
+- Cardinality. Sometimes, there are multiple values for part of the database. (to continue the example, some people have no car, other people own a car, and others own several cars. Furthermore, some people own a car and a bike... you get the idea)
+- Value ranges. When the database designer specifies the database structure, a range of values for each field can be set. A driver's license identifier that consist of characters other than letters and numbers (depending on the locality) may not be allowed.
+- Value relationships. You can move beyond value ranges in designing a database. You can create combinations of attributes and values so that, for example, a database can enforce a rule that an employee may be married (to one person o no one), but if the employee is married, the spouse's employer cannot be the same as the employee's employee. These restrictions in the database reflect policies but there well may be exceptions (a supervisor's approval), and the database can be designed to support a case like that.
+
+These are just a few of the ways in which a database can be set up to enforce logical rules.
+
+Perhaps at this point you are tempted to say: "but I can do each of those things with a line of or two of code". That's absolutely true. But there are a couple of points to bear in mind.
+
+
 # * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
