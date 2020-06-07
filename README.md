@@ -177,6 +177,9 @@ Ask people to tell you words they associate with **database** and you will proba
 This chapter provides an introduction or reminder about databases today an how they are used. If you have used databases in the past, much has changed, an if you have not used to them much in the past, this chapter will give you a quick overview.
 
 # * [Moving Beyond Big](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+Beyond **big**, you should start thinking about databases as being **structured** and **organized**. In fact, as a mobile developers, the structured and organized aspects of databases are much more important than their size. From the earliest days of the Web in the early 1990s, web browsers have used databases to store and organize their data. What Data, you may wonder ? How do you think your browser is able to store your passwords for the web pages in a cache so that they can be retrieved without a new network access when possible ? And what about your preferences for default font sizes ? Or the download folder for files you can change when you feel like it, and even on many browsers, restrictions on certain users or types of users ? These are just simple examples, but the principles apply even to the largest (and smallest) databases today
+
 # * [Databases are Structured and Organized](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
