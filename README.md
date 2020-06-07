@@ -171,6 +171,11 @@ SQLite For Mobil Developers
 # SQLiteForMobilDevelopers
 
 # 1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
+
+Ask people to tell you words they associate with **database** and you will probably get **big** among the responses. Databases handle large amount of data, and everyone knows that. How big ? It depends whether you count the number of items in a database of the size of the items. The Library of Congress has 160 million items on 858 miles of shelving as of this writing. The catalog, which is based on a database, is available online a www.loc.gov/about/fascinating-facts/. There is no questions among people who are interested in databases that the Library of Congress catalog is far from the largest database in the world.(in all likelihood, the largest databases are not visible to the public because they contain classified corporat and governmental information).
+
+This chapter provides an introduction or reminder about databases today an how they are used. If you have used databases in the past, much has changed, an if you have not used to them much in the past, this chapter will give you a quick overview.
+
 # * [Moving Beyond Big](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Databases are Structured and Organized](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
