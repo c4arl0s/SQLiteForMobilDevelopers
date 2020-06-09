@@ -220,6 +220,34 @@ The line or two that implement the rules for one of the data conditions may have
 Those few lines of code may have been modeled on some code from a friend that does exactly (or almost() what you want. Maintaining even the best-written code is a challenge for everyone involved from the first author to the updater to the manager and -eventually the user or manager who ask for **"just a little tweak"** (retoque)
 
 # * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+Today, databases are remarkably standardized in their structure -perhaps more so than almost any other concept in the world of information technology. The idea of a relational database was first propose in 1970 by Edgar Codd, of IBM's San Jose Research Laboratory, and his proposal has become the basis for modern database implementations (see article titled "A relational model of data for large Shared Data banks" Communications of the ACM (june 1970).
+
+In 1974, Donald D. Chamberlin and Raymond F. Boyce (also from IBM) wrote a paper titled "SEQUEL: A structured English Query Language" for the ACM (Association for Computing Machinery) SIGFIDET Workshop on Data Description, Access and Control.
+
+The relational Model (proposed by Codd), together with SQL, has become the basis for modern database implementations. Books by C. J. Date and others together with Codd's original work on the relational model remain the cornerstones of relational database theory today.
+
+---
+Note
+The name SQL is derived from SEQUEL which turned out to be a trademark of the Hawker Siddeley aircraft company. Today, many people suggest that SQL is not an abbreviation or acronym but is a name in and of itself. Others suggest that SQL is an acronym for structured query language
+---
+
+The basic concepts of SQL are few. You can visualize them by thinking of a spreadsheet with its rows and columns. (you can also conceptualize them using mathematical set theory and other concepts, but spreadsheets are easier for many people to think about today).
+
+Following are the Basic SQL concepts.
+
+- **Table**. A table is much like a simple spreadsheet with rows and columns. (It is not like a complex spreadsheet that may include several tables). For this discussion, think simple -just rows and columns in a single table. A table is sometimes referred to as a **relation**, but more often **table** is used.
+
+- **Column**. A column represents a single data element such as **"address"** or **"name"**. In the database world, a column may be called a **field**. In the world of programming, a column may be called an **attribute* or **property**.
+
+- **Row**. A row represents single observations or set of values with one for each column. Thus, a row in this imaginary simple spreadsheets might represent a person's data. In the database world, a row may be called a **record** or **tuple**
+
+To retrieve data from a relational database table, you run a **query**. A query is a set o logical instructions that manipulate a given table in such a way as to retrieve the data that you want. The result of a query is another table. The resulting table may be empty (if no data satisfies the query), it may be some or all of the data in the table, and, in some complex queries, it may be larger than the basic table. The results of a query are sometimes called a **view** or a **result set**.
+
+These concepts and terms apply to most databases today regardless of the language in which they are implemented and, perhaps more important, redardless of the database engine or database management system (DBMS) in which they are implemented. Furthermore, databases are some times implemented as part of frameworks and languages. Thus, in PHP you can use PDO (PHP Data objects) starting with PHP 5.1 to access SQLite. For iOS, you can use the Core Data Framework to worj with SQLite and other data managers. In these cases as well as others, the idea has been to abstract as much as possible into a framework or other wrapper so that switching databases does not require massive rewrites of code.
+
+SQLite implementss most of the SQL standard. The exceptions are listed here https://sqlite.org/ommited.html.
+
 # * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # 2. [Understanding What SQLite is]()
