@@ -213,8 +213,12 @@ You can write the code to implement any of those conditions, but that's just the
 
 The code that took only a few lines of code and couple of minutes to write needs to be rewritten. And, although there is no clear research on the matter, it seems that these changes take place at the last minute before a product (or version) launch and they must be done immediately.
 
-
 # * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+The line or two that implement the rules for one of the data conditions may have been written by someone who is no longer around. Even if your wrote them, time may have passed and you may not remember exactly what you were trying to implement (yes, commenting your code is a desirable feature, but life happens...)
+
+Those few lines of code may have been modeled on some code from a friend that does exactly (or almost() what you want. Maintaining even the best-written code is a challenge for everyone involved from the first author to the updater to the manager and -eventually the user or manager who ask for **"just a little tweak"** (retoque)
+
 # * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
