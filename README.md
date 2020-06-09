@@ -249,6 +249,20 @@ These concepts and terms apply to most databases today regardless of the languag
 SQLite implementss most of the SQL standard. The exceptions are listed here https://sqlite.org/ommited.html.
 
 # * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+For the reminder of this chapter and several that follow, we are going to use a simple example to learn how to create SQLtables and queries. Table 1-1 shows a simple table that can be used to demosntrate the basic concepts of SQL, queries, and relational tables. 
+
+![Screen Shot 2020-06-09 at 16 10 07](https://user-images.githubusercontent.com/24994818/84200070-bf8af900-aa6b-11ea-96d5-0bf5eb4d3736.png)
+
+Table 1-1 shows a simple table that can be used to demostrate the basic concepts of SQL, queries, and relational tables. It shows some data for a few people and their country of origin. The names of the columns (fields) are PK, Name, and Origin. The values of Name are Celia, Leif, and Charlotte; the values for Origin are Australia, Iceland, and United States.
+
+---
+Note
+In a relational database, the columns have names, but rows are not named. In the simple table shown in Table 1-1, the first column (named PK) has three values: 1, 2, and 3. These values happen to correspond to the row numbers, but the sample would work just as well if they were named Chair, Tree, and 15.
+---
+
+You can retrieve data from a table by using a **query**. As noted previusly, the result of a query is a table- perhaps an empty one, perhaps some of the data of the original table, and, in some cases, more data than in the original table. This section shows some typical basic queries. In later chapters, you will see more about queries as well as details about how to structure them. For now, this is just a taste of what queries can be and do.
+
 # * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # 2. [Understanding What SQLite is]()
 # * [Putting a Database in Perspective]()
