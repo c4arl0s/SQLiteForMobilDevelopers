@@ -207,8 +207,13 @@ These are just a few of the ways in which a database can be set up to enforce lo
 
 Perhaps at this point you are tempted to say: "but I can do each of those things with a line of or two of code". That's absolutely true. But there are a couple of points to bear in mind.
 
-
 # * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+You can write the code to implement any of those conditions, but that's just the start. Over time, conditions change, users have suggestions, and the Power That Be (whoever that (or "they") may be in your life) decides to change the rules for employment, cars, the conditions that apply to license plate numbers, or any other things that strike his or her fancy.
+
+The code that took only a few lines of code and couple of minutes to write needs to be rewritten. And, although there is no clear research on the matter, it seems that these changes take place at the last minute before a product (or version) launch and they must be done immediately.
+
+
 # * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
 # * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
