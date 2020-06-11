@@ -264,6 +264,71 @@ In a relational database, the columns have names, but rows are not named. In the
 You can retrieve data from a table by using a **query**. As noted previusly, the result of a query is a table- perhaps an empty one, perhaps some of the data of the original table, and, in some cases, more data than in the original table. This section shows some typical basic queries. In later chapters, you will see more about queries as well as details about how to structure them. For now, this is just a taste of what queries can be and do.
 
 # * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
+
+In their simplest form, queries consist of three sections.
+
+---
+Note
+The code shown in this section is SQL code. By convention, reserved words in SQL are shown in CAPITAL LETTERS although in most implementations, SQL is case-sensitive.
+---
+
+- SQL Action: SELECT
+There are a number of verbs in SQL, but SELECT is used to select data from a table. Commands start with that word.
+
+- SQL Data to Select: List of Column Names
+You can start to form a SELECT statement by listing the names of the columns you want to select. Thus, to retrieve data from the Name column, you would start the SELECT statement with 
+
+```sql
+SELECT Name
+```
+
+To select data from several columns, you can specify a comma-delimited list as in he following case;
+
+```sql
+SELECT Name, Origin
+```
+
+You can select all columns with and asterisk as in
+
+```sql
+SELECT *
+```
+- SQL Data Source: Table Name
+
+You can specify the data source using a clause 3 beginning with FROM. Following is an example:
+
+```sql
+SELECT Name FROM SimpleTable
+```
+
+- SQL Condition: WHERE
+
+You can specify the condition you want to use for selecting data with a clause that begins with WHERE. For example, you could use that first column (PK) to select a single row.
+
+```sql
+SELECT Name FROM SimpleTable WHERE PK = 2
+```
+You can also form a condition that is more complex:
+
+```sql
+SELECT Name FROM SimpleTable WHERE PK < 3
+```
+
+- Looking at Other Query Choices
+
+These are the simplest possible examples more complex ones will be shown throughout the book, but the basic pattern will remain as follows:
+
+```sql
+SELECT this FROM tabe WHERE condition
+```
+
+You can use several tables as your data source. Thus, if you have names and origins as shown in table 1-1 in a single table, you could have another table with each person's birthday. You could create a single SELECT statement to retrieve both the name and birthday for anyone; to do so you would have to use two tables (don't worry, this i an example you will see in Chapter 4)
+
+As noted previously, the result of a SELECT query is itself a table. Thus, you can write a SELECT query that executes a SELECT statement to create a table and then selects data from that resulting table.
+
+With this brief overview of relational databases and SQL, It is time to move on to SQLite itself.
+
+
 # 2. [Understanding What SQLite is]()
 # * [Putting a Database in Perspective]()
 # * [Defining SQLite]()
