@@ -328,8 +328,10 @@ As noted previously, the result of a SELECT query is itself a table. Thus, you c
 
 With this brief overview of relational databases and SQL, It is time to move on to SQLite itself.
 
-
 # 2. [Understanding What SQLite is]()
+
+Chapter 1 provided an overview of relational databases and SQL that applies to most modern databases regardless of the environment in which you find them (Oracle, MySQL, Microsoft SQL Server, or others). That generality is important because SQLite is part of hat picture. In this chapter, however, the focus is just on SQLite and the features of SQLite that you may or may not find in other databases environments. Whereas a lot of Chapter 1 may be familiar to long-time database users, much of this chapter may not be because even if it is not SQLite-only, many of the features described in this chapter are not present in other database environments. (to be quite fair, many features of other database environments are not found in SQLite.)
+
 # * [Putting a Database in Perspective]()
 # * [Defining SQLite]()
 # * [SQLite is Designed for a Single User]()
