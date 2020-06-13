@@ -333,6 +333,17 @@ With this brief overview of relational databases and SQL, It is time to move on 
 Chapter 1 provided an overview of relational databases and SQL that applies to most modern databases regardless of the environment in which you find them (Oracle, MySQL, Microsoft SQL Server, or others). That generality is important because SQLite is part of hat picture. In this chapter, however, the focus is just on SQLite and the features of SQLite that you may or may not find in other databases environments. Whereas a lot of Chapter 1 may be familiar to long-time database users, much of this chapter may not be because even if it is not SQLite-only, many of the features described in this chapter are not present in other database environments. (to be quite fair, many features of other database environments are not found in SQLite.)
 
 # * [Putting a Database in Perspective]()
+
+A **relational database** typically lives inside some kind of containing object. Often, the container is a **database management system** (DBMS) (You may sometimes see references to a relational database management system (RDBMS). For most purposes in today's world, most DBMSs are RDBMSs)
+
+A database management system such as Oracle provides functionality that goes beyond the database itself, such as user interfaces or developer interfaces; diagnostic debugging, and maintenance tools; and even sophisticated data display functionality. 
+
+In some cases, a database is part of a language, object-oriented class, or framework that, itself, may or may not be a DBMS. For example, PHP has a database class just as does the Android SDK (yes, one is a language and one is an operating system, but each can provide an object-oriented database class) You will find more about these classes in Chapters 6 and 7.
+
+On the other hand, Cocoa and Cocoa Touch provide a Core Data framework for both iOS and Mac. I describe Core Data later in Chapters 8 and 9.
+
+For most of this book, the focus is on SQLite itself, but beginning with Chapter 6, you will see how to access it when it is inside a DBMS, class, or framework.
+
 # * [Defining SQLite]()
 # * [SQLite is Designed for a Single User]()
 # * [Single User does not Mean Single-Tread]()
