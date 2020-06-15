@@ -381,6 +381,9 @@ One of the biggest differences between SQLite and most **DBMSs** is that SQLite 
 **Apparently** is the key word here because although each user typically thinks that he or she has unique access to the database, in fact, behind the scenes the **DBMs** manages concurrency so that in some cases, it has locked a record to prevent access to it by a second user while another user is updating it.
 
 # * [Single User does not Mean Single-Tread]()
+
+**SQLite manages concurrency within its own environment**. This means that it may have multiple threads running at the same time to perform its own task, but those threads are managed within the SQLite environment itself. They do not represent separate users.
+
 # * [Using SQLite with Multiple Users]()
 # * [SQLite is Self-Contained]()
 # * [Self-Contained Code]()
