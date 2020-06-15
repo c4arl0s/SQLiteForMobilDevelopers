@@ -385,6 +385,15 @@ One of the biggest differences between SQLite and most **DBMSs** is that SQLite 
 **SQLite manages concurrency within its own environment**. This means that it may have multiple threads running at the same time to perform its own task, but those threads are managed within the SQLite environment itself. They do not represent separate users.
 
 # * [Using SQLite with Multiple Users]()
+
+How can you have multiple users when SQLite is designed for a single user ? The answer is simple: **you manage multiple users yourself**. There are number of ways of doing this, but in general, what you do is to push the multipleuser management onto the app, class or language into which SQLite is embedded. Apps typically have the ability to communicate with one another (subject to security and platform constraints). 
+
+**Thus, although SQLite is not going to manage the case of User A and User B attempting to modify the same **data** at the same time, your app can do so**.
+
+Typical concurrency strategies involve either having a master process that manages the concurrency or having a mechanism whereby multiple independent processes communicate without a master process. You find many examples of multiple independent processes in apps such as Dropbox and many cloud-based apps. (In the case of Dropbox and cloud-based apps, there may be a process continually running somewhere in the cloud and, perhaps separate process running on active clients. Whether or not control resides in a central process or is distributed among the clients (and master) varies depending on the specific implementation).
+
+Thus, SQLite is perfectly capable of functioning in a multipleuser world; it just needs to be running inside apps or other processes that themselves implement the multipleuser features.
+
 # * [SQLite is Self-Contained]()
 # * [Self-Contained Code]()
 # * [Self-Contained Data]()
