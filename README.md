@@ -345,6 +345,37 @@ On the other hand, Cocoa and Cocoa Touch provide a Core Data framework for both 
 For most of this book, the focus is on SQLite itself, but beginning with Chapter 6, you will see how to access it when it is inside a DBMS, class, or framework.
 
 # * [Defining SQLite]()
+
+SQLite is a software library written in C. It was developed by D. Richard Hipp in 2000 originally as part of a contract with the U.S Navy that was implemented by General Dynamics. Today, it consist of some 184,000 lines of code. 
+
+SQLite is in the public domain, so it can be used by anyone. Further details and links to download the source code are available at sqlite.org.
+
+You can compile the source code into a library that, in turn, you can use in an application program. Although you may find references to SQLite as a **DBMS**, it is, strictly speaking, just this library. The container in which that library is compiled (a class, a framework, or a full-fledged DBMS) provides the larger DBMS functionalities.
+
+---
+Note
+Is SQLite a DBMS ? In some ways, this only matters if that question can be answered in a way that influences the way you design or implement your SQLite-based project. However, if you track down references to SQLite, you will see that it is usually referred to (correctly) as a library or as a database engine.
+---
+
+The code has been designed from the beginning to be compact and reusable (that reference to its origin with the U.S. Navy is relevant here - When you are on a ship at sea, every resource is limited, including power, space, and weight. Furthermore, in modern ships, technological components must function together even if their origins are with multiple vendors. That is the SQLite environment.
+
+Whether you are worried about the limited resources on a ship, on a mobile device running an operating system such as Android or iOS, or on a small mobile device such as a programmable beacon ... or even the limited resources on a supercomputer ("limited" is always is relative), SQLite is a good choice in many cases.
+
+The following sections highlight some of the major features of SQLite that implement this mandate and that are important to you as you use it in whatever container you choose (DBMS, class, framework, or basic library). These features are important to you as you undertake a SQLite based project for a mobile device.
+
+The features discussed in this section actually all resolve around the fact that SQLite is a library that is designed to be used by a single user to handle database functionality. (Before you throw up your hands, read on to see how SQLite can function very well in a multiuser and multiprocess environment). The following are the features to consider:
+
+ * SQLite is designed for a single user.
+ * SQLite is self-contained
+ * SQLite supports transactions and is ACID-compliant.
+
+---
+Note
+You can find more details on these topics at sqlite.org.
+---
+
+
+
 # * [SQLite is Designed for a Single User]()
 # * [Single User does not Mean Single-Tread]()
 # * [Using SQLite with Multiple Users]()
