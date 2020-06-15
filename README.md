@@ -374,9 +374,12 @@ Note
 You can find more details on these topics at sqlite.org.
 ---
 
-
-
 # * [SQLite is Designed for a Single User]()
+
+One of the biggest differences between SQLite and most **DBMSs** is that SQLite is designed for a single user. Most **DBMSs** manage multiple users including various security features that allow or block access to specific SQL commands and features. Even more important to many people, a **DBMS** manages contention for resources so that several users can apparently use the same data concurrently.
+
+**Apparently** is the key word here because although each user typically thinks that he or she has unique access to the database, in fact, behind the scenes the **DBMs** manages concurrency so that in some cases, it has locked a record to prevent access to it by a second user while another user is updating it.
+
 # * [Single User does not Mean Single-Tread]()
 # * [Using SQLite with Multiple Users]()
 # * [SQLite is Self-Contained]()
