@@ -395,6 +395,20 @@ Typical concurrency strategies involve either having a master process that manag
 Thus, SQLite is perfectly capable of functioning in a multipleuser world; it just needs to be running inside apps or other processes that themselves implement the multipleuser features.
 
 # * [SQLite is Self-Contained]()
+
+SQLite is self-contained in two ways.
+
+- 1. The code itself is self-contained ANSI C code. It makes minimal use of C libraries. In fact, the only ones it uses are
+   * memset()
+   * memcpy()
+   * memcmp()
+   * strcmp()
+   * malloc()
+   * free()
+   * realloc()
+
+- 2. The data stored itself is self-contained, portable, and platform-agnostic.  
+
 # * [Self-Contained Code]()
 # * [Self-Contained Data]()
 # * [SQLite Supports Transactions and is ACID-Compliant]()
