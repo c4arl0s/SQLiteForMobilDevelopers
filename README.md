@@ -3,37 +3,37 @@
 SQLite For Mobil Developers
 
 1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
-2. [Understanding What SQLite is]()
-3. [Using SQLite Basics: Storing and Retrieving Data]()
-4. [Working with the Relational Model and SQLite]()
-5. [Using SQLite Features.What can you do with SELECT Statements]()
-6. [Using SQLite with PHP]()
-7. [Using SQLite with Android/Java]()
-8. [Using SQLite with Core Data (iOS and OSX)]()
-9. [Using SQLite/Core Data with Swift (iOS and OSX)]()
-10. [Using SQLiteCore Data With Objective-C (iOS and Mac)]()
-11. [Using the Simple Database with a PHP Web Site]()
-12. [Using the Simple Database with a Core Data/iOS App]()
+2. [Understanding What SQLite is](https://github.com/c4arl0s/SQLiteForMobilDevelopers#2-understanding-what-sqlite-is)
+3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#3-using-sqlite-basics-storing-and-retrieving-data)
+4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#4-working-with-the-relational-model-and-sqlite)
+5. [Using SQLite Features.What can you do with SELECT Statements](https://github.com/c4arl0s/SQLiteForMobilDevelopers#5-using-sqlite-featureswhat-can-you-do-with-select-statements)
+6. [Using SQLite with PHP](https://github.com/c4arl0s/SQLiteForMobilDevelopers#6-using-sqlite-with-php)
+7. [Using SQLite with Android/Java](https://github.com/c4arl0s/SQLiteForMobilDevelopers#7-using-sqlite-with-androidjava)
+8. [Using SQLite with Core Data (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#8-using-sqlite-with-core-data-ios-and-osx)
+9. [Using SQLite/Core Data with Swift (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#9-using-sqlitecore-data-with-swift-ios-and-osx)
+10. [Using SQLiteCore Data With Objective-C (iOS and Mac)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#10-using-sqlitecore-data-with-objective-c-ios-and-mac)
+11. [Using the Simple Database with a PHP Web Site](https://github.com/c4arl0s/SQLiteForMobilDevelopers#11-using-the-simple-database-with-a-php-web-site)
+12. [Using the Simple Database with a Core Data/iOS App](https://github.com/c4arl0s/SQLiteForMobilDevelopers#12-using-the-simple-database-with-a-core-dataios-app)
 
 
 # SQLiteForMobilDevelopers
 
 # 1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Moving Beyond Big]()
- * [Databases are Structured and Organized]()
- * [Databases are Smart]()
- * [Write code is juts the beginning]()
- * [Parles-vouz Python ? Sprechen Sie Scala?]()
- * [Relational Databases and SQL to the Resque]()
- * [Looking Inside a Relational Table and Query]()
- * [Basic Query Structure]()
-# 2. [Understanding What SQLite is]()
- * [Putting a Database in Perspective]()
- * [Defining SQLite]()
- * [SQLite is Designed for a Single User]()
- * [Single User does not Mean Single-Tread]()
- * [Using SQLite with Multiple Users]()
- * [SQLite is Self-Contained]()
+ * [Moving Beyond Big](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-moving-beyond-big)
+ * [Databases are Structured and Organized](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-structured-and-organized)
+ * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-smart)
+ * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-write-code-is-juts-the-beginning)
+ * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-parles-vouz-python--sprechen-sie-scala)
+ * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-relational-databases-and-sql-to-the-resque)
+ * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-looking-inside-a-relational-table-and-query)
+ * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-basic-query-structure)
+# 2. [Understanding What SQLite is](https://github.com/c4arl0s/SQLiteForMobilDevelopers#2-understanding-what-sqlite-is-1)
+ * [Putting a Database in Perspective](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-putting-a-database-in-perspective)
+ * [Defining SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-defining-sqlite)
+ * [SQLite is Designed for a Single User](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-designed-for-a-single-user)
+ * [Single User does not Mean Single-Tread](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-single-user-does-not-mean-single-tread)
+ * [Using SQLite with Multiple Users](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite-with-multiple-users)
+ * [SQLite is Self-Contained](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-self-contained)
  * [Self-Contained Code]()
  * [Self-Contained Data]()
  * [SQLite Supports Transactions and is ACID-Compliant]()
@@ -410,6 +410,16 @@ SQLite is self-contained in two ways.
 - 2. The data stored itself is self-contained, portable, and platform-agnostic.  
 
 # * [Self-Contained Code]()
+
+Self-contained code means that when you include the SQLite library in your project (either directly or through a language, class or framework), you have everything you need. You don't need to include additional libraries.
+
+You don't have to worry about versions, and, once you have a compiled SQLite library, you can generally reuse it without being independent on changes in components (remember, though, that in most cases SQLite is embedded in a language, class, framework, or DBMS so the container is what you will need to update from time to time.)
+
+Because SQLite is in the public domain, you don't have to worry about licenses or license fees. (you can, however, obtain a license as described on sqlite.org. That option is provided for some users who need to demonstrate to their management that they actually have the right to use SQLite).
+
+Remember that SQLite is often contained within a class, framework, or language that you are using so this feature (which to a large extent makes such containability possible) may not visible to you.
+
+
 # * [Self-Contained Data]()
 # * [SQLite Supports Transactions and is ACID-Compliant]()
 # * [Concurrency and Acid Transactions on Mobile Devices]()
