@@ -419,8 +419,23 @@ Because SQLite is in the public domain, you don't have to worry about licenses o
 
 Remember that SQLite is often contained within a class, framework, or language that you are using so this feature (which to a large extent makes such containability possible) may not visible to you.
 
-
 # * [Self-Contained Data]()
+
+The data store that SQLite uses for a database is designed to be self-contained and cross-platform. This mean that you can transfer  SQLite file from one environment to another without problems in most cases. (That caveat [consideracion, advertencia] is necessary because you may encountered issues in specific configurations, but for many if not most SQLite users, the first step in verifying that a database can be moved is to actually move it - this actually works).
+
+In its most basic (and original) form, each SQLite database is stored in a single file. The file is readable and writable on any platform (subject to environmental constraints of the file). For example, if you place the file on a read-only disk, you can't write to it with SQLite. (This may sound far-fetched, but such things do happen).
+
+with the database in a single file, users can see it and move it around if they want. (if they do so, the app that you are building must be able to find the file - perhaps with user's help). Users can also delete the database file. Because it is self-contained, that's very simple, and it does not corrupt other SQLite databases. Of course, the fact that a user may be able to delete the database means that in your implementation, you may want to hide it or place it in protected places. If you do that, you often take advantage of platform-specific features such as hidden folders, but the SQLite file itself remains an ordinary file that can be moved around and copied to other devices.
+
+Because the database file is self-contained, it contains both the database data and its schema (structured if you are not from the database world). In part because each database is self-contained, SQLite is referred to as **serverless** (there is no separate server process).
+
+The fact that a SQLite database can be stored in a single file leads to a common use of SQLite to implement structure and database functionality inside what appears to the user to be a simple file.
+
+---
+Note
+Although SQLite began with the one-database/one-file structure, it now supports write-ahead logging (WAL) as an option. WAL is a technique that optimizes database performance using multiple files. There is more on WAL in Chapter 4
+---
+
 # * [SQLite Supports Transactions and is ACID-Compliant]()
 # * [Concurrency and Acid Transactions on Mobile Devices]()
 #
