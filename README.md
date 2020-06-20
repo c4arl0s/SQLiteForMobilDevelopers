@@ -437,6 +437,34 @@ Although SQLite began with the one-database/one-file structure, it now supports 
 ---
 
 # * [SQLite Supports Transactions and is ACID-Compliant]()
+
+**Transaction** in he world of databases has a very specific meaning over and above its regular meaning in English. It refers to a set of steps that are done together (usually in sequence, but not necessarily so). Together, these steps are a transaction, and what's important is that the transaction as a whole either succeeds or fails. If any of the steps fails, the entire transaction fails. As a result of transaction failure, the database is said to be **rolled back** to its condition before the transaction began.
+
+When a database supports transactions, the failure of any part of a transaction means **the entire transaction fails and the database is set to whatever it was before the transaction started. All of this happens in an ACID-compliant database such as SQLite. As you saw in Chapter 1, there is a lot of code you don't have to write when you are using a database.
+
+ACID is the standard by which most databases are judge today to determine if they support transactions. ACID is an acronym.
+
+ - **Atomicity**. This is the all-or-nothing aspect of a transaction. It succeeds or fails as a whole and can never partially sucessful.
+ - **Consistency**. In processing a transaction, the database will start from a valid state an end in a valid state. In other words, a transaction will not violat database rules such as the optionality of attributes as a result of a transaction, but those rules may be violated during the course of the transaction.
+ - **Isolation**. This means that transactions acan be run sequencially or concurrently. They will not interfere with one another. (Isolation requires that a database implement a method for managing concurrency so the operations can be either sequenctial or concurrent).
+ - **Durability**. This means that, on completion, the transactions persists. In practical terms, this generally means that it is committed to disk.
+
+In SQLite (as in many other implementations of SQL), a transaction consist of a number of SQL statements bracketde by 
+
+```console
+BEGIN TRANSACTION
+```
+
+and 
+
+
+```console
+END TRANSACTION
+```
+
+There is more on transactionsin Chapter 4. You will see how to define them and how to specify the point of which a failed transaction is **rolled back**. In that chapter, you will also see a larger description of how WAL implements atomicity and urability.
+
+
 # * [Concurrency and Acid Transactions on Mobile Devices]()
 #
 # 3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
