@@ -440,7 +440,7 @@ Although SQLite began with the one-database/one-file structure, it now supports 
 
 **Transaction** in he world of databases has a very specific meaning over and above its regular meaning in English. It refers to a set of steps that are done together (usually in sequence, but not necessarily so). Together, these steps are a transaction, and what's important is that the transaction as a whole either succeeds or fails. If any of the steps fails, the entire transaction fails. As a result of transaction failure, the database is said to be **rolled back** to its condition before the transaction began.
 
-When a database supports transactions, the failure of any part of a transaction means **the entire transaction fails and the database is set to whatever it was before the transaction started. All of this happens in an ACID-compliant database such as SQLite. As you saw in Chapter 1, there is a lot of code you don't have to write when you are using a database.
+When a database supports transactions, the failure of any part of a transaction means **the entire transaction fails and the database is set to whatever it was before the transaction started**. All of this happens in an ACID-compliant database such as SQLite. As you saw in Chapter 1, there is a lot of code you don't have to write when you are using a database.
 
 ACID is the standard by which most databases are judge today to determine if they support transactions. ACID is an acronym.
 
@@ -464,9 +464,12 @@ END TRANSACTION
 
 There is more on transactionsin Chapter 4. You will see how to define them and how to specify the point of which a failed transaction is **rolled back**. In that chapter, you will also see a larger description of how WAL implements atomicity and urability.
 
-
 # * [Concurrency and Acid Transactions on Mobile Devices]()
-#
+
+You might think that when you are writing for a mobile device such as a phone, there is only a single user and this discussion of transactions and ACID compliance does not apply. However, this issues of concurrency apply perhaps even more on mobile devices that in other cases.
+
+The reason why you have to think about transactions and their failures on mobile devices is that many of the most frequent tasks you perform on mobile devices involve network access. As anyone who has tried to carry on a phone conversation in a train that suddenly speeds through a tunnel knows, network availability can suddenly disappear on a mobile device.
+
 # 3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 # * [Terminology and Definitions]()
 # * [Using sqlite3]()
