@@ -472,11 +472,22 @@ The reason why you have to think about transactions and their failures on mobile
 
 # 3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 
-SQLite is a lightweight library containing a database engine that lets you use a very large subset of SQL to store and retrieve data. As a user, you are most likely to be familiar with an application interface or the interface of a database management sustem (DBMS) that privides an interface to the database itself. Behind the scenes, your commans (whether text or graphical) are translated into SQLite syntax.
+SQLite is a lightweight library containing a database engine that lets you use a very large subset of SQL to store and retrieve data. As a user, you are most likely to be familiar with an application interface or the interface of a database management sustem (DBMS) that provides an interface to the database itself. Behind the scenes, your commands (whether text or graphical) are translated into SQLite syntax.
 
 This chapter shows you the basics of creating a table, adding data to it, and retrieving the data. It is a high-level overview to give you a taste of SQLite. The next chapter will drill drown into some options and variations you can use. In this chapter, you will use both a graphical user interface (GUI) and the sqlite3 command-line interface that are part of SQLite. In subsequent chapters, you will usually see only the SQLite interface because it includes the SQLite commands. In most graphical editors for SQLite, you have an option to type in the SQLite code directly, so those commands should work for you in either environment.
 
 # * [Terminology and Definitions]()
+
+"SQLite" is used in a various ways in this book.
+
+- SQLite as used in this book is refered to a any version of SQLite
+- SQLite 3 is the current version of SQLite.
+- SQLite 3.9.2 is the current release version of SQLite.
+- sqlite3 is a command line utility.
+
+As you read various materials about databases and relational databases, you may encountered database management systems (DBMS) and relational database management systems RDBMS). Most databases today are relational databases, and almost all of them are based on SQL. There are other types of databases, but they are not widely used at the moment. A particularly interesting approach to data management today is **unstructured data, but that is outside the scope of this book.
+
+
 # * [Using sqlite3]()
 # * [Experimenting with SQLite syntax]()
 # * [About Primary Keys]()
