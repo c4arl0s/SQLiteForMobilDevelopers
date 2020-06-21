@@ -471,6 +471,11 @@ You might think that when you are writing for a mobile device such as a phone, t
 The reason why you have to think about transactions and their failures on mobile devices is that many of the most frequent tasks you perform on mobile devices involve network access. As anyone who has tried to carry on a phone conversation in a train that suddenly speeds through a tunnel knows, network availability can suddenly disappear on a mobile device.
 
 # 3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
+
+SQLite is a lightweight library containing a database engine that lets you use a very large subset of SQL to store and retrieve data. As a user, you are most likely to be familiar with an application interface or the interface of a database management sustem (DBMS) that privides an interface to the database itself. Behind the scenes, your commans (whether text or graphical) are translated into SQLite syntax.
+
+This chapter shows you the basics of creating a table, adding data to it, and retrieving the data. It is a high-level overview to give you a taste of SQLite. The next chapter will drill drown into some options and variations you can use. In this chapter, you will use both a graphical user interface (GUI) and the sqlite3 command-line interface that are part of SQLite. In subsequent chapters, you will usually see only the SQLite interface because it includes the SQLite commands. In most graphical editors for SQLite, you have an option to type in the SQLite code directly, so those commands should work for you in either environment.
+
 # * [Terminology and Definitions]()
 # * [Using sqlite3]()
 # * [Experimenting with SQLite syntax]()
