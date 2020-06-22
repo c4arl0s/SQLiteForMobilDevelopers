@@ -487,8 +487,66 @@ This chapter shows you the basics of creating a table, adding data to it, and re
 
 As you read various materials about databases and relational databases, you may encountered database management systems (DBMS) and relational database management systems RDBMS). Most databases today are relational databases, and almost all of them are based on SQL. There are other types of databases, but they are not widely used at the moment. A particularly interesting approach to data management today is **unstructured data, but that is outside the scope of this book.
 
-
 # * [Using sqlite3]()
+
+sqlite3 is a command-line utility that is part of SQLite 3 (sqlite2 version is no longer applicable). It runs on OS X (using terminal) or as sqlite.exe, which runs on Windows. It allows you to experiment with SQLite code directly, and it is used in this book as a touchstone for SQLite syntax. (When you use a third-party tool such as a graphical editor, you may encountered slight variations in the syntax such as a whether or not a semicolon is required at the end of a statement - it is in SQLite) You end your sqlite3 session wit a **.quit** o **.exit**. Note the initial periof because both are sqlite3 commands, but no semicolon at the end because they are not SQLite syntax (requiring a semicolon).
+
+Most of the sqlite3 code in this book is shown with the prompt at the beginning of each line so that you can see which commands are multiline commands. Remember that you always need a semicolon at the end of a command - You can place it alone on the last line if you forgotten to enter it before.
+
+sqlite3 works with a temporary database that it creates for you, or alternatively, you can manage your own databases. These commands are shown here because they are sqlite3 commands and not SQLite syntax.
+
+In the following subsections, we will review the basic sqlite3 commands that you need to use the most. You can find more information about the sqlite3 commands at www.sqlite.org/cli.html.
+
+---
+Note
+Commands inside sqlite start with a period.
+---
+
+Run sqlite3 and let it Create a New Dababase just type
+
+```console
+Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository 
+$ sqlite3
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> 
+```
+
+When you are finished, type .exit or .quite.
+
+```console
+Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository 
+$ sqlite3
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .exit
+Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository 
+$ sqlite3
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .quit
+Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository 
+$ 
+```
+
+Create and Nam a New sqlite3 Database
+
+The command sqlite3 database will create a new database called database
+
+```console
+Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository 
+$ sqlite3 database
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+sqlite> 
+```
+
 # * [Experimenting with SQLite syntax]()
 # * [About Primary Keys]()
 # * [Exploring your sqlite3 Database with a Graphical SQLite Editor]()
