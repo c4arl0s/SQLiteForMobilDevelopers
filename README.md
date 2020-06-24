@@ -535,7 +535,7 @@ Mon Jun 22 ~/iOS/SQLiteForMobilDevelopers_CarlosRepository
 $ 
 ```
 
-Create and Nam a New sqlite3 Database
+# [Create and Nam a New sqlite3 Database]()
 
 The command sqlite3 database will create a new database called database
 
@@ -546,6 +546,39 @@ SQLite version 3.28.0 2019-04-15 14:49:49
 Enter ".help" for usage hints.
 sqlite> 
 ```
+# [Save database]()
+
+```console
+$ sqlite3 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .save database
+```
+
+# [Run sqlite3 and Open an Existing Database]()
+
+To open an existing dabase use the .open command. If you want to change your directory in Terminal (or whatever your command-line editor is, use your standard command). In terminal on OS X, after you type cd, just drag the folder into which you want to place your files into Terminal: it will pick up the path and insert it into your code.
+
+```console
+Wed Jun 24 ~ 
+$ sqlite3 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .save database
+sqlite> .open database
+```
+
+# [Delete the database]()
+
+By default, the database is created at the root level of the user (as long as that's the directory set in your command-line editor). Therefore, you can delete it from the Finder if you are on OS X. Just go to your root level (i.e., next to folders such as Desktop, Documents, Downloads, Library, Movies, ... Sites). and delete the database you have just created.
+
+
+
+
 
 # * [Experimenting with SQLite syntax]()
 # * [About Primary Keys]()
