@@ -576,11 +576,27 @@ sqlite> .open database
 
 By default, the database is created at the root level of the user (as long as that's the directory set in your command-line editor). Therefore, you can delete it from the Finder if you are on OS X. Just go to your root level (i.e., next to folders such as Desktop, Documents, Downloads, Library, Movies, ... Sites). and delete the database you have just created.
 
-
-
-
-
 # * [Experimenting with SQLite syntax]()
+
+The SQLPro or SQLite editor is useful to demonstrate SQLite syntax because, like a number of other SQLite editors, you can use a higher-level interface such as a graphical user interface (GUI) to manipulate your database, but you can also see the underlying SQLite code that is generated. It is that SQLite code with which you will be working in the rest of the book.
+
+This section lets you explore SQLite syntax, but remember that most of the SQLite code you will creating is going to be embedded in an app that you write (or within a framework, DBMS, or library that is included in your app).
+
+There are a number of lightweight SQL editors available on Web. Because sqlite files are cross-platform, you can use these editors to work with any sqlite file that you have (subject, of course, to security constraints implemented by the operating system). In this chapter, SQLPro for SQLite is used as an example of a simple GUI placed on top of SQLite. It is available at www.sqlitepro.com. This will show you how table 3-1 is created from a user's point of view.
+
+Table 3-1. SimpleTable
+
+Because a graphical editor provides you with a view of what you are doing to your database, it may be easier to use than a command-line interface where there is no guidance beyond the command-line prompt. If you prefer to start our with the command line, rest assured that in this chapter you will see the graphical representation of the table as you create it, but you will also see the SQLite syntax that is generated at each step.
+
+---
+Note
+DBBrowser is another editing tool for SQLite. It is available for Windows, Mac, and linuex at http://sqlitebrowser.org.
+---
+
+SQlite uses a subset o SQL (a very large subset at that). In addition, there are some minor modifications to standard SQL syntax (and, to be quite blunt, just about every DBMS makes some minor modifications of one kind or another). Rest assured, the SQL shown in this chapter applies in almost every environment. If you download a SQL editor from the Web (i.e., a standard SQL editor and not a SQLite edito), you may actually be using syntax that differs every slightly from SQLite.
+
+In particular, the very common MySQL DBMS has several popular editors - many of them free - but you might find a few minor differences. Most people (including me) function quite well without worrying about these distinctions: if they do crop up they are simple to solve. What may be the most important point to remember is that SQLite syntax as it is implemented in SQLite is available at sqlite.org. SQL itself is not a standar in the way the HTML is, and that is why you may encountered these variations.
+
 # * [About Primary Keys]()
 # * [Exploring your sqlite3 Database with a Graphical SQLite Editor]()
 # * [Creating a table]()
