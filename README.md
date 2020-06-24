@@ -598,6 +598,13 @@ SQlite uses a subset o SQL (a very large subset at that). In addition, there are
 In particular, the very common MySQL DBMS has several popular editors - many of them free - but you might find a few minor differences. Most people (including me) function quite well without worrying about these distinctions: if they do crop up they are simple to solve. What may be the most important point to remember is that SQLite syntax as it is implemented in SQLite is available at sqlite.org. SQL itself is not a standar in the way the HTML is, and that is why you may encountered these variations.
 
 # * [About Primary Keys]()
+
+Each row in a SQLite table has a **rowid** - a unique identifier that lets you access that specific row. Often, a unique **rowid** is created automatically for a table. Often, a unique **rowid** is created automatically for a table. It may not even be visible to users. Ideally, a primary key is not only unique but also meaningless.
+
+In fact, a meaningless primary key is generally more useful than one with meaning. If the primary key is a person's name, birthday, or address, it can change. Only a totally meaningless value that has no dependency on anything else can successfully serve as a primary key.
+
+That is one of the reasons that database developers often hide their primary keys -or, in the case of SQLite, they let the database take care of it behind the scenes. If you do not want SQLite to do this for you, the check box in SQLPro for SQLite lets you use the behind-the-scenes mechanism. It is exposed in this example in order to use it in demonstrating relationships in [Chapter 4]().
+
 # * [Exploring your sqlite3 Database with a Graphical SQLite Editor]()
 # * [Creating a table]()
 # * [Using a Graphical SQLite Editor]()
