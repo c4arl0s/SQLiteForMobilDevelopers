@@ -606,6 +606,38 @@ In fact, a meaningless primary key is generally more useful than one with meanin
 That is one of the reasons that database developers often hide their primary keys -or, in the case of SQLite, they let the database take care of it behind the scenes. If you do not want SQLite to do this for you, the check box in SQLPro for SQLite lets you use the behind-the-scenes mechanism. It is exposed in this example in order to use it in demonstrating relationships in [Chapter 4]().
 
 # * [Exploring your sqlite3 Database with a Graphical SQLite Editor]()
+
+When you first open your graphical sqlite editor, you will probably see an empty database (or even no database at all). As is the case with any modern app, you may be given the opportunity to reopen the last opened database or to navigate to an existing database.
+
+---
+Note
+Tip, remember than a SQLite database is in its own file usually with a sqlite extension. If you have more than one SQLite database, you have more than one file. (There may be some related files see "Write-Ahead Logging" in chapter 4")
+
+In your database window, you will usually see a list of the items in your database (if any exist). The main items that you usually care about are:
+
+- **Tables** That contain data. You can retrieve the data using a query. Queries return tables - they may have no rows or columns and therefore be empty, but they are tables nonetheless.
+- **Views** are saved queries that, like all queries, produce a table as their result. Thus, a view is not just a saved query: it also can be used much like a table (the result of query)
+- **System tables** are sqlite tables that are created automatically of you within each database. You may think you are creating a new table, and you are, but in addition, you are updating the **sqlite_master**, which keeps track of each table in the database.
+
+It there are no tables yet, that is the case if you have just created a new database - You will typically see a list such as the one at the left of Figure 3-1. There are headers for tables and views (none are present as this is a new database). Under the System Tables header, you can see the single sqlite_master table, which is present in each SQLite database.
+
+---
+Note
+Capitalization does not matter in SQLite, but the conventions of using capital letters for SQL syntax and capital names for the names of tables and views is used in the book's text. These are only conventions. Code examples use both upper and  lower case. Remember that these are options and conventions, so use what you prefer. If you are working on several projects, you may encounter a variety styles and conventions. Some people (including me) are in the habit of posting a large sheet of paper on the wall with the conventions for current projects.
+---
+
+
+If you open sqlite_master, you can see the columns in that table as shown at the left of figure 3-1. Here they are:
+
+- **type** is TABLE in the case of tables. (other values will be discussed as they encountered)
+- **name** is the table name
+- **tbl_name** is a short table name but may be the same as **name**
+- **rootpage** is used to identify the location in the database where the table is found. You don't often need to refer to this.
+- **sql** is the sql code that is used to create the item. It will be updated with modifications so that is the code to be used to create the item as it is currently configured (not as it was originally configured)
+
+![Screen Shot 2020-06-28 at 7 35 22](https://user-images.githubusercontent.com/24994818/85947701-f2f5d080-b911-11ea-8c7f-7e5214ffb68b.png)
+
+
 # * [Creating a table]()
 # * [Using a Graphical SQLite Editor]()
 # * [Creating Table Columns]()
