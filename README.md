@@ -637,8 +637,77 @@ If you open sqlite_master, you can see the columns in that table as shown at the
 
 ![Screen Shot 2020-06-28 at 7 35 22](https://user-images.githubusercontent.com/24994818/85947701-f2f5d080-b911-11ea-8c7f-7e5214ffb68b.png)
 
-
 # * [Creating a table]()
+
+Here are ways to create a table with a graphical SQLite editor or with the command-line and **sqlite3**.
+
+# * [Using a Graphical SQLite Editor]()
+
+At the bottom of the list of tables shown in Figure 3-1 (and near to it in other editors), you will find a + that lets you add another table to the list. Figure 3-2 shows the result of clicking +.
+
+![Screen Recording 2020-06-29 at 17 22 32 2020-06-29 17_24_10](https://user-images.githubusercontent.com/24994818/86062009-693b2580-ba2d-11ea-90df-d8ed99a3bce2.gif)
+
+Figure 3-2 Starting to create a new table.
+
+You see a form into which you can type your table name. A single column is placed in the window. The first thing you usually do is rename both the table and the first column.
+
+![Screen Recording 2020-06-29 at 17 26 48 2020-06-29 17_27_50](https://user-images.githubusercontent.com/24994818/86062244-e1a1e680-ba2d-11ea-906a-954bcf0104b6.gif)
+
+# * [Creating Table Columns]()
+
+You can use + to create additional columns. In this case, you know what the table should look like (you have seen it in Table 3-1, so it's no difficult to set up the columns in Figure 3-3.
+
+![Screen Recording 2020-06-29 at 17 29 07 2020-06-29 17_31_43](https://user-images.githubusercontent.com/24994818/86062488-6db40e00-ba2e-11ea-8860-d8832fee0eae.gif)
+
+The details of the data type and size attributes should not be too difficult to set because you have pop-up menus to use. The possible values for Data Types in SQLite Pro for SQLite are
+
+- **blob**
+- **char**
+- **double**
+- **float**
+- **integer**
+- **varchar**, **nvarchar**
+- **text**
+
+These have the same meaning they have in most languages, but in **SQLite**, the types are relatively unimportant because **SQLite** is not strongly typed. It actually uses five basic storage classes.
+
+- **NULL**
+- **INTEGER**
+- **REAL**
+- **TEXT**
+- **BLOB**
+
+These storage classes are useful in the implementation of **SQLite**. As noted in the documentation at http://sqlite.org/datatype3.html
+
+Any column in a SQLite version 3 database, except an **INTEGER PRIMARY KEY** column, may be used to store a value of any storage class.
+
+This does not mean that you should ignore typing. In fact, when **SQLite** is embedded in a framework, DBMS, or language, stricter typing may well be enforced. However, it is the framework, DBMS, or language that enforces that typing.
+
+**NULL** values are represented by a special code internally that represents nonexistent - NULL. This is far preferable to using an actual value (typically 0 or 1) **to represent missing data**. As soon as you provide any value for missing-data value, you run the risk of accidentally using that missing-data value as a **real data value**. (Ask anyone who worked on the year 2000 problem what the consequences of this are). When **NULL** is not an acceptable value, this means that the relevant column must have some value or other. It can't be totally empty.
+
+In the table as shown in Figure 3-3, **PK and Name cannot be NULL**, but Origin can be blank.
+
+![Screen Shot 2020-06-29 at 17 43 56](https://user-images.githubusercontent.com/24994818/86063270-229afa80-ba30-11ea-9113-81bf827bbefd.png)
+
+---
+Note
+A non-null text field must have a value, but it is perfectly acceptable to give it a value of an empty string - that is, a string of zero characters surrounded by quotation marks as in "".
+---
+
+When you have finished specifying your table name and its columns, you click accept (or whatever your editor calls its button), and the table is created. Remember that inside **sqlite_master** you have a field called **sql** for each table. The field contains the code that generates the table (not its data). You can see that code in **SQLPro** for **SQLite** by clicking the Structure button at the top of Figure 3-4.
+
+```sqlite
+CREATE TABLE NewTable (
+  Pk integer PRIMARY KEY NOT NULL,
+  Name char(128) NOT NULL DEFAULT(''),
+  Origin char(128)
+);
+```
+
+![Screen Shot 2020-06-29 at 17 49 13](https://user-images.githubusercontent.com/24994818/86063609-dc926680-ba30-11ea-83d9-48630a088b17.png)
+
+
+
 # * [Using a Graphical SQLite Editor]()
 # * [Creating Table Columns]()
 # * [Using SQLite 3]()
