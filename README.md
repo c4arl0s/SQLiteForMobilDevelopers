@@ -696,6 +696,12 @@ A non-null text field must have a value, but it is perfectly acceptable to give 
 
 When you have finished specifying your table name and its columns, you click accept (or whatever your editor calls its button), and the table is created. Remember that inside **sqlite_master** you have a field called **sql** for each table. The field contains the code that generates the table (not its data). You can see that code in **SQLPro** for **SQLite** by clicking the Structure button at the top of Figure 3-4.
 
+![Screen Shot 2020-06-29 at 17 49 13](https://user-images.githubusercontent.com/24994818/86063609-dc926680-ba30-11ea-83d9-48630a088b17.png)
+
+# [Using SQLite3]()
+
+Here is the syntax for sqlite3. Note that this syntax creates both the table and its columns. The **ALTER TABLE** commands lets you come back later to modify the table's columns.
+
 ```sqlite
 CREATE TABLE NewTable (
   Pk integer PRIMARY KEY NOT NULL,
@@ -704,15 +710,28 @@ CREATE TABLE NewTable (
 );
 ```
 
-![Screen Shot 2020-06-29 at 17 49 13](https://user-images.githubusercontent.com/24994818/86063609-dc926680-ba30-11ea-83d9-48630a088b17.png)
+# * [Inserting Data into a Table]()
 
-
+As in the previous section, you will see how to do this with a **GUI** as well as with the command line.
 
 # * [Using a Graphical SQLite Editor]()
-# * [Creating Table Columns]()
-# * [Using SQLite 3]()
-# * [Inserting Data into a Table]()
-# * [Using a graphical Interface]()
+
+In SQLPro for SQLite, the Data button at the top of the window shown in Figure 3-5 lets you add more rows to the column. You can type in the data that you want. Figure 3-5 shows three new rows created, but the only data typed in is located in the first row. You will notice that the PK primary key is automatically filled in, even in the third row: **sqlite** has taken care of this because it is the **primary key**. 
+
+![Screen Shot 2020-06-30 at 12 43 21](https://user-images.githubusercontent.com/24994818/86159027-4eb98880-bacf-11ea-986e-cecf09121912.png)
+
+If you want to enter data with a query (here is how you would do it from a command-line interface), you can enter it using the Query button as shown in Figure 3-6.
+
+```sqlite3
+insert into "NewTable" (PK, Name, Origin) VALUES (6, "Charlotte", "United States")
+```
+
+![Screen Shot 2020-06-30 at 12 47 57](https://user-images.githubusercontent.com/24994818/86159420-f040da00-bacf-11ea-9efb-a785055b64b7.png)
+
+---
+Note
+When a table name includes a blank, you need to place it in quotes. Note that in this example, the original **NewTable**  has been renamed **Simple Table** so it needs to be quoted in the query. In SQLPro for SQLite, the gear wheel below the table list has a **Rename** command you can use to create or avoid this situation
+
 # * [Using SQLite 3]()
 # * [Retrieving Data]()
 # * [Using graphical interface]()
