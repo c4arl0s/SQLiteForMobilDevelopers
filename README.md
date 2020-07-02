@@ -733,6 +733,19 @@ Note
 When a table name includes a blank, you need to place it in quotes. Note that in this example, the original **NewTable**  has been renamed **Simple Table** so it needs to be quoted in the query. In SQLPro for SQLite, the gear wheel below the table list has a **Rename** command you can use to create or avoid this situation
 
 # * [Using SQLite 3]()
+
+Following is the sqlite3code to enter all three records:
+
+```sqlite3
+INSERT INTO NewTable (PK, Name, Origin) VALUES (1, "Cecelia", "Australia");
+INSERT INTO NewTable (PK, Name, Origin) VALUES (2, "Leif", "Iceland");
+INSERT INTO NewTable (PK, Name, Origin) VALUES (3, "Charlotte", "United States");
+```
+
+all three failed because I filled with different values, but that is the way to insert new values.
+
+
+
 # * [Retrieving Data]()
 # * [Using graphical interface]()
 # * [Deleting Data]()
