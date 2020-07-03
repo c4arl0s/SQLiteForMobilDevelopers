@@ -744,12 +744,40 @@ INSERT INTO NewTable (PK, Name, Origin) VALUES (3, "Charlotte", "United States")
 
 all three failed because I filled with different values, but that is the way to insert new values.
 
-
-
 # * [Retrieving Data]()
+
+If you want to retrieve data from the table, you use a **SELECT** query. Here is an example:
+
+```sqlite
+SELECT * FROM NewTable WHERE Name = "Leif"
+```
+
 # * [Using graphical interface]()
+
+![Screen Shot 2020-07-03 at 11 31 47](https://user-images.githubusercontent.com/24994818/86486419-d813c980-bd20-11ea-80fb-072e7909a99b.png)
+
+```console
+$ sqlite3 CreatingTable.db
+```
+
+```console
+sqlite>SELECT * FROM NewTable WHERE Name = "Leif"
+1|Leif|Australia
+2|Leif|Iceland
+```
+
 # * [Deleting Data]()
+
+If you are playing around with data, you may wind up with data you don't want. In particular, you may be encountering errors because the PK field must be unique so you can't re-enter data you have already entered.
+
+Her is how to delete a row with PK value 1.
+
+```console
+DELETE FROM NewTable WHERE PK = 1;
+```
 # * [Summary]()
+
+This chapter has shown you the basics of creating a table, inserting data into it, and the retrieving it. Remember that these are only the basics: in later chapters, you will see more features of SQLite, but, throughout, the same basic **SQLite** commands you have see in this chapter will recur with variations and options. (As a reminder, those commands are CREATE, INSERT, AND SELECT).
 #
 # 4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 # * [Building the Users Table]()
