@@ -828,6 +828,45 @@ sqlite>
 ```
 
 # * [Building The Scores Table]()
+
+Building the Scores table is basically the same code. For the sake of simplicity, you can let each user start with a score of zero. With that assumption, here is the code.
+
+```sqlite
+$ sqlite3 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> create table users (
+   ...> Name char (128) not null,
+   ...> email char (128) 
+   ...> );
+sqlite> insert into users (Name, email) VALUES("Rex", "rex@champlainarts.com");
+sqlite> insert into users (Name, email) VALUES("Anni", "anni@champlainarts.com");
+sqlite> insert into users (Name, email) VALUES("Toby", "toby@champlainarts.com");
+sqlite> select * from users;
+Rex|rex@champlainarts.com
+Anni|anni@champlainarts.com
+Toby|toby@champlainarts.com
+sqlite> create table scores (
+   ...> Name char(128),
+   ...> score integer
+   ...> );
+sqlite> insert into scores (name, score) VALUES("Rex", 0);
+sqlite> insert into scores (name, score) VALUES("Anni", 0);
+sqlite> insert into scores (name, score) VALUES("Toby", 0);
+sqlite> select * from scores;
+Rex|0
+Anni|0
+Toby|0
+sqlite> 
+```
+
+Table 4-2 shows the data in Scores at this point.
+
+![Screen Shot 2020-07-05 at 10 40 10](https://user-images.githubusercontent.com/24994818/86536282-ed692f00-beab-11ea-8da7-bc059d8ac4df.png)
+
+
 # * [Relating the Tables]()
 # * [Using Aliases to Identify Multiple Tables in a SELECT Statement]()
 # * [Using the rowid Primary Key]()
