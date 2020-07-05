@@ -637,11 +637,11 @@ If you open sqlite_master, you can see the columns in that table as shown at the
 
 ![Screen Shot 2020-06-28 at 7 35 22](https://user-images.githubusercontent.com/24994818/85947701-f2f5d080-b911-11ea-8c7f-7e5214ffb68b.png)
 
-# * [Creating a table]()
+# * [Creating a table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-creating-a-table)
 
 Here are ways to create a table with a graphical SQLite editor or with the command-line and **sqlite3**.
 
-# * [Using a Graphical SQLite Editor]()
+# * [Using a Graphical SQLite Editor](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-a-graphical-sqlite-editor)
 
 At the bottom of the list of tables shown in Figure 3-1 (and near to it in other editors), you will find a + that lets you add another table to the list. Figure 3-2 shows the result of clicking +.
 
@@ -653,7 +653,7 @@ You see a form into which you can type your table name. A single column is place
 
 ![Screen Recording 2020-06-29 at 17 26 48 2020-06-29 17_27_50](https://user-images.githubusercontent.com/24994818/86062244-e1a1e680-ba2d-11ea-906a-954bcf0104b6.gif)
 
-# * [Creating Table Columns]()
+# * [Creating Table Columns](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-creating-table-columns)
 
 You can use + to create additional columns. In this case, you know what the table should look like (you have seen it in Table 3-1, so it's no difficult to set up the columns in Figure 3-3.
 
@@ -698,7 +698,7 @@ When you have finished specifying your table name and its columns, you click acc
 
 ![Screen Shot 2020-06-29 at 17 49 13](https://user-images.githubusercontent.com/24994818/86063609-dc926680-ba30-11ea-83d9-48630a088b17.png)
 
-# [Using SQLite3]()
+# [Using SQLite3](https://github.com/c4arl0s/SQLiteForMobilDevelopers#using-sqlite3)
 
 Here is the syntax for sqlite3. Note that this syntax creates both the table and its columns. The **ALTER TABLE** commands lets you come back later to modify the table's columns.
 
@@ -710,11 +710,11 @@ CREATE TABLE NewTable (
 );
 ```
 
-# * [Inserting Data into a Table]()
+# * [Inserting Data into a Table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-inserting-data-into-a-table)
 
 As in the previous section, you will see how to do this with a **GUI** as well as with the command line.
 
-# * [Using a Graphical SQLite Editor]()
+# * [Using a Graphical SQLite Editor](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-a-graphical-sqlite-editor-1)
 
 In SQLPro for SQLite, the Data button at the top of the window shown in Figure 3-5 lets you add more rows to the column. You can type in the data that you want. Figure 3-5 shows three new rows created, but the only data typed in is located in the first row. You will notice that the PK primary key is automatically filled in, even in the third row: **sqlite** has taken care of this because it is the **primary key**. 
 
@@ -732,7 +732,7 @@ insert into "NewTable" (PK, Name, Origin) VALUES (6, "Charlotte", "United States
 Note
 When a table name includes a blank, you need to place it in quotes. Note that in this example, the original **NewTable**  has been renamed **Simple Table** so it needs to be quoted in the query. In SQLPro for SQLite, the gear wheel below the table list has a **Rename** command you can use to create or avoid this situation
 
-# * [Using SQLite 3]()
+# * [Using SQLite 3](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite-3)
 
 Following is the sqlite3code to enter all three records:
 
@@ -744,7 +744,7 @@ INSERT INTO NewTable (PK, Name, Origin) VALUES (3, "Charlotte", "United States")
 
 all three failed because I filled with different values, but that is the way to insert new values.
 
-# * [Retrieving Data]()
+# * [Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-retrieving-data)
 
 If you want to retrieve data from the table, you use a **SELECT** query. Here is an example:
 
@@ -752,7 +752,7 @@ If you want to retrieve data from the table, you use a **SELECT** query. Here is
 SELECT * FROM NewTable WHERE Name = "Leif"
 ```
 
-# * [Using graphical interface]()
+# * [Using graphical interface](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-graphical-interface)
 
 ![Screen Shot 2020-07-03 at 11 31 47](https://user-images.githubusercontent.com/24994818/86486419-d813c980-bd20-11ea-80fb-072e7909a99b.png)
 
@@ -766,7 +766,7 @@ sqlite>SELECT * FROM NewTable WHERE Name = "Leif"
 2|Leif|Iceland
 ```
 
-# * [Deleting Data]()
+# * [Deleting Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-deleting-data)
 
 If you are playing around with data, you may wind up with data you don't want. In particular, you may be encountering errors because the PK field must be unique so you can't re-enter data you have already entered.
 
@@ -775,25 +775,58 @@ Her is how to delete a row with PK value 1.
 ```console
 DELETE FROM NewTable WHERE PK = 1;
 ```
-# * [Summary]()
+# * [Summary](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-summary)
 
-This chapter has shown you the basics of creating a table, inserting data into it, and the retrieving it. Remember that these are only the basics: in later chapters, you will see more features of SQLite, but, throughout, the same basic **SQLite** commands you have see in this chapter will recur with variations and options. (As a reminder, those commands are CREATE, INSERT, AND SELECT).
+This chapter has shown you the basics of creating a table, inserting data into it, and the retrieving it. Remember that these are only the basics: in later chapters, you will see more features of SQLite, but, throughout, the same basic **SQLite** commands you have see in this chapter will recur with variations and options. (As a reminder, those commands are **CREATE**, **INSERT**, AND **SELECT**).
 #
 # 4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 
-You have seen how to create a table, add rows to it, insert data into it, and then retrieve the data. Granted, there is not much data involved so far, but these are the basics of database management. Along the way you have seen that SQLite (like may other libraries and data managers) is **typically embedded in a framework, language, class, or database management systems (DBMS)+*. As noted, today, most DBMs are relational database management systems (RDBMSs). They are based on the relational model first proposed in 1970 by E. F. Codd and they typically use SQL or a derivative (like SQLite) to create, manage, and query the relatinal database.
+You have seen how to create a table, add rows to it, insert data into it, and then retrieve the data. Granted, there is not much data involved so far, but these are the basics of database management. Along the way you have seen that SQLite (like may other libraries and data managers) is **typically embedded in a framework, language, class, or database management systems (DBMS**. As noted, today, most DBMs are relational database management systems **(RDBMSs)**. They are based on the relational model first proposed in 1970 by E. F. Codd and they typically use SQL or a derivative (like SQLite) to create, manage, and query the relational database.
 
-You have seen how to use one of the many graphical editors for SQLite (you can find them on the Web searching for "SQLite editor" and perhaps including your operating system in the search) You have also seen how to use basic SQLite syntax directly to create tables and work with their data. This chapter adds another tool to the mix: sqlite3 which is a **command-line tool** distributed as part of **SQLite**
+You have seen how to use one of the many graphical editors for SQLite (you can find them on the Web searching for **"SQLite editor"** and perhaps including your operating system in the search) You have also seen how to use basic SQLite syntax directly to create tables and work with their data. This chapter adds another tool to the mix: sqlite3 which is a **command-line tool** distributed as part of **SQLite**
 
 ---
 Note
 Most Databases today use the relational model, so DBMS and RDBMS are more or less interchangeable terms. This chapter lets you see what is **not interchangeable**: it is only about **relational databases** (like SQLite). **A relational database is a database in which two tables can be related to one another**. It is the **tables** that are related, and the relationship is created based on **data** in each of the related tables. Thus, althrough in most of this book DBMS is used, in this chapter, because the topic is relational data, we use the term **RDBMS**. Relationships connect two labels, so in order to talk about relationships we need to start with two tables.
 ---
 
-Relationships can become very comples (and very powerful). as they are build. For he reason, some people shy away from them, but there is no reason to be concerned. This chapter provides an overview of how relationships work, why you should use them, and how easy it is to create them. Relationships usually involve two or more tables, so this chapter begins by showing you how to create two tables that are logically related. Then you will see how to use SQLite to actually relate them. (A relationship can actually be created from a single table back to itself. That is called a **self-join)
-
+Relationships can become very complex (and very powerful), as they are build. For he reason, some people shy away from them, but there is no reason to be concerned. This chapter provides an overview of how relationships work, why you should use them, and how easy it is to create them. Relationships usually involve two or more tables, so this chapter begins by showing you how to create two tables that are logically related. Then you will see how to use SQLite to actually relate them. (A relationship can actually be created from a single table back to itself. That is called a **self-join**)
 
 # * [Building the Users Table]()
+
+Consider the case of keeping score in a multiuser game. You can build on the basics from Chapter 3 to create a table like NewTable. In this case, the table is for users. From a data management point of view, there's little difference between a table with names and birthplaces and a table with names and e-mail addresses. (The main difference is that the second table will be more useful in tracking game scores, which is what this example is all about.).
+
+There is another difference that you will see when you look at the table shown in Table 4-1 and compare it to NewTable. The explicit primary key (column PK) is missing. This table uses the SQLite build-in mechanism for creating a primary key with a unique value for each row. Keep that thought in mind, because we will return to it shortly.
+
+![Screen Shot 2020-07-05 at 10 16 01](https://user-images.githubusercontent.com/24994818/86535795-8c8c2780-bea8-11ea-9c8d-857bbd12d3bd.png)
+
+---
+Note
+As noted previously, capitalization does not matter in SQLite except within parentheses. By convention, SQL keywords are capitalized. In this book, names of tables and columns are typically capitalized in the text; in the sample code they may or may not be to reinforce the fact that it does not matter to SQLite. In practice, it is very good idea to settle on a convention to use. That is because many languages today do recognize the difference between upper- and lowercase letters. Thus, when you switch between writing SQLite code where UseR and user and USER are the same to swift, Objective-C, Python, C and others where case matters, you may inadvertently introduce errors for yourself or others by not adhering to a standard. (In addition, standard rules for naming and capitalization make your code easier to read and maintain in the future.)
+---
+
+This is a good start, and you have already seen the code to create such a table in Chapter 3. With the revised column names and data, here is how you can create and populate the table.
+
+```sqlite
+$ sqlite3 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> create table users (
+   ...> Name char (128) not null,
+   ...> email char (128) 
+   ...> );
+sqlite> insert into users (Name, email) VALUES("Rex", "rex@champlainarts.com");
+sqlite> insert into users (Name, email) VALUES("Anni", "anni@champlainarts.com");
+sqlite> insert into users (Name, email) VALUES("Toby", "toby@champlainarts.com");
+sqlite> select * from users;
+Rex|rex@champlainarts.com
+Anni|anni@champlainarts.com
+Toby|toby@champlainarts.com
+sqlite> 
+```
+
 # * [Building The Scores Table]()
 # * [Relating the Tables]()
 # * [Using Aliases to Identify Multiple Tables in a SELECT Statement]()
