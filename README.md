@@ -780,6 +780,19 @@ DELETE FROM NewTable WHERE PK = 1;
 This chapter has shown you the basics of creating a table, inserting data into it, and the retrieving it. Remember that these are only the basics: in later chapters, you will see more features of SQLite, but, throughout, the same basic **SQLite** commands you have see in this chapter will recur with variations and options. (As a reminder, those commands are CREATE, INSERT, AND SELECT).
 #
 # 4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
+
+You have seen how to create a table, add rows to it, insert data into it, and then retrieve the data. Granted, there is not much data involved so far, but these are the basics of database management. Along the way you have seen that SQLite (like may other libraries and data managers) is **typically embedded in a framework, language, class, or database management systems (DBMS)+*. As noted, today, most DBMs are relational database management systems (RDBMSs). They are based on the relational model first proposed in 1970 by E. F. Codd and they typically use SQL or a derivative (like SQLite) to create, manage, and query the relatinal database.
+
+You have seen how to use one of the many graphical editors for SQLite (you can find them on the Web searching for "SQLite editor" and perhaps including your operating system in the search) You have also seen how to use basic SQLite syntax directly to create tables and work with their data. This chapter adds another tool to the mix: sqlite3 which is a **command-line tool** distributed as part of **SQLite**
+
+---
+Note
+Most Databases today use the relational model, so DBMS and RDBMS are more or less interchangeable terms. This chapter lets you see what is **not interchangeable**: it is only about **relational databases** (like SQLite). **A relational database is a database in which two tables can be related to one another**. It is the **tables** that are related, and the relationship is created based on **data** in each of the related tables. Thus, althrough in most of this book DBMS is used, in this chapter, because the topic is relational data, we use the term **RDBMS**. Relationships connect two labels, so in order to talk about relationships we need to start with two tables.
+---
+
+Relationships can become very comples (and very powerful). as they are build. For he reason, some people shy away from them, but there is no reason to be concerned. This chapter provides an overview of how relationships work, why you should use them, and how easy it is to create them. Relationships usually involve two or more tables, so this chapter begins by showing you how to create two tables that are logically related. Then you will see how to use SQLite to actually relate them. (A relationship can actually be created from a single table back to itself. That is called a **self-join)
+
+
 # * [Building the Users Table]()
 # * [Building The Scores Table]()
 # * [Relating the Tables]()
