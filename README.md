@@ -866,9 +866,42 @@ Table 4-2 shows the data in Scores at this point.
 
 ![Screen Shot 2020-07-05 at 10 40 10](https://user-images.githubusercontent.com/24994818/86536282-ed692f00-beab-11ea-8da7-bc059d8ac4df.png)
 
-
 # * [Relating the Tables]()
+
+You need to have a way to refer to two tables in a single **SELECT** statement (that's where aliases come into play). You also need to actually implement the relationship, and that's where primary keys come into play again.
+
 # * [Using Aliases to Identify Multiple Tables in a SELECT Statement]()
+
+The challenge is to tables and aliases together. You need to select the data for **Anni**, but there's a problem here: Both **Scores** and **Users** have columns called **Name**. If you use  condition such as **where name = "Anni"**, SQLite won't know which **Name** column you mean. You can distinguish between those two columns by identifying them in your **SELECT** statement. It does not matter how you identify them, so you could write the following:
+
+```sql
+select a.name, email, score from users a, scores b where a.name = "Anni" and b.name = "Anni";
+```
+
+You qualify each table with an **alias**. In the **FROM** clause, the alias follows the table name, and on the **SELECT** and **WHERE** clauses, the alias precedes the table name and is separated from it by a period. This in the **SELECT** command and **WHERE** clause, you get
+
+```sql
+select a.name where a.name = "Anni";
+```
+
+and in the **FROM** clause you get
+
+```sql
+FROM users a
+```
+
+Although you can use anything, you want as the alias; it can make your code easier to read if you use the actual name or an abbreviation for it as in the following:
+
+```sql
+select users.name, email, score from users, scores where users.name = "Anni" and scores.name = "Anni";
+```
+
+Names that are unambiguous (they only occur in one table) don't need aliases.
+
+This structure is very fragile as you will recognize if you have done much work with data and databases. Everything relies on the names being the same in both tables. If there's a misspelling anywhere the data won't match. And even without typos, what happen if a name changes (this happens for a variety of real-world reasons). You could wind up with a handful of Scores records that use the earlier name ad another group of records that use the later name.
+
+Before moving on the explore this issue, it is worthwhile to take a look at what's already been done by SQLite behind the scenes: it will help you solve the problems that are unfolding as names change.
+
 # * [Using the rowid Primary Key]()
 # * [Changing a Name in One Table]()
 # * [Using a Foreign Key]()
