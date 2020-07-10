@@ -903,6 +903,28 @@ This structure is very fragile as you will recognize if you have done much work 
 Before moving on the explore this issue, it is worthwhile to take a look at what's already been done by SQLite behind the scenes: it will help you solve the problems that are unfolding as names change.
 
 # * [Using the rowid Primary Key]()
+
+In Chapter 3, primary keys that uniquely identify each row in a table were discussed. They are very useful in retrieving data, particularly in cases where the data itself may be incorrect or may have changed from what you think it is, due to revisions or other circumstances. If you don't specify a primary key, SQLite has gone ahead and create a unique key for each row in each table. It is called **rowid**, and you can see it in any table for which you have not provided a primary key. With the Users table shown in this section, you can access the primary keys with the following code:
+
+```sql
+$ sqlite3 RelationalDataBase 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+sqlite> select name, rowid from users;
+Rex|1
+Anni|2
+Toby|3
+```
+
+This code for Scores shows its primary keys;
+
+```sql
+sqlite> select name, rowid from scores;
+Rex|1
+Anni|2
+Toby|3
+```
+
 # * [Changing a Name in One Table]()
 # * [Using a Foreign Key]()
 # * [Joining the Tables]()
