@@ -2,170 +2,170 @@
 
 SQLite For Mobil Developers
 
-1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite)
-2. [Understanding What SQLite is](https://github.com/c4arl0s/SQLiteForMobilDevelopers#2-understanding-what-sqlite-is)
-3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#3-using-sqlite-basics-storing-and-retrieving-data)
-4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#4-working-with-the-relational-model-and-sqlite)
-5. [Using SQLite Features.What can you do with SELECT Statements](https://github.com/c4arl0s/SQLiteForMobilDevelopers#5-using-sqlite-featureswhat-can-you-do-with-select-statements)
-6. [Using SQLite with PHP](https://github.com/c4arl0s/SQLiteForMobilDevelopers#6-using-sqlite-with-php)
-7. [Using SQLite with Android/Java](https://github.com/c4arl0s/SQLiteForMobilDevelopers#7-using-sqlite-with-androidjava)
-8. [Using SQLite with Core Data (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#8-using-sqlite-with-core-data-ios-and-osx)
-9. [Using SQLite/Core Data with Swift (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#9-using-sqlitecore-data-with-swift-ios-and-osx)
-10. [Using SQLiteCore Data With Objective-C (iOS and Mac)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#10-using-sqlitecore-data-with-objective-c-ios-and-mac)
-11. [Using the Simple Database with a PHP Web Site](https://github.com/c4arl0s/SQLiteForMobilDevelopers#11-using-the-simple-database-with-a-php-web-site)
-12. [Using the Simple Database with a Core Data/iOS App](https://github.com/c4arl0s/SQLiteForMobilDevelopers#12-using-the-simple-database-with-a-core-dataios-app)
+1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#1-getting-up-to-speed-with-databases-and-sqlite) [ X ]
+2. [Understanding What SQLite is](https://github.com/c4arl0s/SQLiteForMobilDevelopers#2-understanding-what-sqlite-is) [ X ]
+3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#3-using-sqlite-basics-storing-and-retrieving-data) [ X ]
+4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#4-working-with-the-relational-model-and-sqlite) [ ]
+5. [Using SQLite Features.What can you do with SELECT Statements](https://github.com/c4arl0s/SQLiteForMobilDevelopers#5-using-sqlite-featureswhat-can-you-do-with-select-statements) [ ]
+6. [Using SQLite with PHP](https://github.com/c4arl0s/SQLiteForMobilDevelopers#6-using-sqlite-with-php) [ ]
+7. [Using SQLite with Android/Java](https://github.com/c4arl0s/SQLiteForMobilDevelopers#7-using-sqlite-with-androidjava) [ ]
+8. [Using SQLite with Core Data (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#8-using-sqlite-with-core-data-ios-and-osx) [ ]
+9. [Using SQLite/Core Data with Swift (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#9-using-sqlitecore-data-with-swift-ios-and-osx) [ ]
+10. [Using SQLiteCore Data With Objective-C (iOS and Mac)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#10-using-sqlitecore-data-with-objective-c-ios-and-mac) [ ]
+11. [Using the Simple Database with a PHP Web Site](https://github.com/c4arl0s/SQLiteForMobilDevelopers#11-using-the-simple-database-with-a-php-web-site) [ ]
+12. [Using the Simple Database with a Core Data/iOS App](https://github.com/c4arl0s/SQLiteForMobilDevelopers#12-using-the-simple-database-with-a-core-dataios-app) [ ]
 
 
 # SQLiteForMobilDevelopers
 
 # 1. [Getting Up to Speed with Databases and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Moving Beyond Big](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-moving-beyond-big)
- * [Databases are Structured and Organized](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-structured-and-organized)
- * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-smart)
- * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-write-code-is-juts-the-beginning)
- * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-parles-vouz-python--sprechen-sie-scala)
- * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-relational-databases-and-sql-to-the-resque)
- * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-looking-inside-a-relational-table-and-query)
- * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-basic-query-structure)
+ * [Moving Beyond Big](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-moving-beyond-big) [ X ]
+ * [Databases are Structured and Organized](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-structured-and-organized) [ X ]
+ * [Databases are Smart](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-databases-are-smart) [ X ]
+ * [Write code is juts the beginning](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-write-code-is-juts-the-beginning) [ X ]
+ * [Parles-vouz Python ? Sprechen Sie Scala?](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-parles-vouz-python--sprechen-sie-scala) [ X ]
+ * [Relational Databases and SQL to the Resque](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-relational-databases-and-sql-to-the-resque) [ X ]
+ * [Looking Inside a Relational Table and Query](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-looking-inside-a-relational-table-and-query) [ X ]
+ * [Basic Query Structure](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-basic-query-structure) [ X ]
 # 2. [Understanding What SQLite is](https://github.com/c4arl0s/SQLiteForMobilDevelopers#2-understanding-what-sqlite-is-1)
- * [Putting a Database in Perspective](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-putting-a-database-in-perspective)
- * [Defining SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-defining-sqlite)
- * [SQLite is Designed for a Single User](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-designed-for-a-single-user)
- * [Single User does not Mean Single-Tread](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-single-user-does-not-mean-single-tread)
- * [Using SQLite with Multiple Users](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite-with-multiple-users)
- * [SQLite is Self-Contained](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-self-contained)
- * [Self-Contained Code]()
- * [Self-Contained Data]()
- * [SQLite Supports Transactions and is ACID-Compliant]()
- * [Concurrency and Acid Transactions on Mobile Devices]()
-
+ * [Putting a Database in Perspective](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-putting-a-database-in-perspective) [ X ]
+ * [Defining SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-defining-sqlite) [ X ]
+ * [SQLite is Designed for a Single User](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-designed-for-a-single-user) [ X ]
+ * [Single User does not Mean Single-Tread](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-single-user-does-not-mean-single-tread) [ X ]
+ * [Using SQLite with Multiple Users](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite-with-multiple-users) [ X ]
+ * [SQLite is Self-Contained](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-is-self-contained) [ X ]
+ * [Self-Contained Code](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-self-contained-code) [ X ]
+ * [Self-Contained Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-self-contained-data) [ X ]
+ * [SQLite Supports Transactions and is ACID-Compliant](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-sqlite-supports-transactions-and-is-acid-compliant) [ X ]
+ * [Concurrency and Acid Transactions on Mobile Devices](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-concurrency-and-acid-transactions-on-mobile-devices) [ X ]
+ [ X ]
 # 3. [Using SQLite Basics: Storing and Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Terminology and Definitions]()
- * [Using sqlite3]()
- * [Experimenting with SQLite syntax]()
- * [About Primary Keys]()
- * [Exploring your sqlite3 Database with a Graphical SQLite Editor]()
- * [Creating a table]()
- * [Using a Graphical SQLite Editor]()
- * [Creating Table Columns]()
- * [Using SQLite 3]()
- * [Inserting Data into a Table]()
- * [Using a graphical Interface]()
- * [Using SQLite 3]()
- * [Retrieving Data]()
- * [Using graphical interface]()
- * [Deleting Data]()
- * [Summary]()
-
+ * [Terminology and Definitions](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-terminology-and-definitions) [ X ]
+ * [Using sqlite3](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite3) [ X ]
+ * [Experimenting with SQLite syntax](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-experimenting-with-sqlite-syntax) [ X ]
+ * [About Primary Keys](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-about-primary-keys) [ X ]
+ * [Exploring your sqlite3 Database with a Graphical SQLite Editor](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-exploring-your-sqlite3-database-with-a-graphical-sqlite-editor) [ X ]
+ * [Creating a table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-creating-a-table) [ X ]
+ * [Using a Graphical SQLite Editor](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-a-graphical-sqlite-editor) [ X ]
+ * [Creating Table Columns](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-creating-table-columns) [ X ]
+ * [Using SQLite 3](https://github.com/c4arl0s/SQLiteForMobilDevelopers#using-sqlite3) [ X ]
+ * [Inserting Data into a Table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-inserting-data-into-a-table) [ X ]
+ * [Using a graphical Interface](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-a-graphical-sqlite-editor-1) [ X ]
+ * [Using SQLite 3](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-sqlite-3) [ X ]
+ * [Retrieving Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-retrieving-data) [ X ]
+ * [Using graphical interface](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-graphical-interface) [ X ]
+ * [Deleting Data](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-deleting-data) [ X ]
+ * [Summary](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-summary) [ X ]
+ [ X ]
 # 4. [Working with the Relational Model and SQLite](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Building the Users Table]()
- * [Building The Scores Table]()
- * [Relating the Tables]()
- * [Using Aliases to Identify Multiple Tables in a SELECT Statement]()
- * [Using the rowid Primary Key]()
- * [Changing a Name in One Table]()
- * [Using a Foreign Key]()
- * [Joining the Tables]()
- * [Summary]()
+ * [Building the Users Table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-building-the-users-table) [ X ]
+ * [Building The Scores Table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-building-the-scores-table) [ X ]
+ * [Relating the Tables](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-relating-the-tables) [ X ]
+ * [Using Aliases to Identify Multiple Tables in a SELECT Statement](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-aliases-to-identify-multiple-tables-in-a-select-statement) [ X ]
+ * [Using the rowid Primary Key](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-the-rowid-primary-key) [ X ]
+ * [Changing a Name in One Table](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-changing-a-name-in-one-table) [ X ]
+ * [Using a Foreign Key](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-using-a-foreign-key) [ X ]
+ * [Joining the Tables](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-joining-the-tables) [ ]
+ * [Summary](https://github.com/c4arl0s/SQLiteForMobilDevelopers#-summary-1) [ ]
 
 # 5. [Using SQLite Features.What can you do with SELECT Statements](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Looking at the Test Data]()
- * [Ordering Data Makes it Easier to Use]()
- * [Grouping Data can Consolidate it]()
- * [Using Variables and Queries]()
- * [Summary]()
+ * [Looking at the Test Data]() [ ]
+ * [Ordering Data Makes it Easier to Use]() [ ]
+ * [Grouping Data can Consolidate it]() [ ]
+ * [Using Variables and Queries]() [ ]
+ * [Summary]() [ ]
 
 # 6. [Using SQLite with PHP](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 # 7. [Using SQLite with Android/Java](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 # 8. [Using SQLite with Core Data (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Introducing to Core Data Framework]()
- * [Using the Core Data Model Editor]()
- * [Using Entities]()
- * [Working with Attributes]()
- * [Managing Relationships]()
- * [Summary]()
+ * [Introducing to Core Data Framework]() [ ]
+ * [Using the Core Data Model Editor]() [ ]
+ * [Using Entities]() [ ]
+ * [Working with Attributes]() [ ]
+ * [Managing Relationships]() [ ]
+ * [Summary]() [ ]
 # 9. [Using SQLite/Core Data with Swift (iOS and OSX)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Looking at the Core Data Stack]()
-  * [Managed Object Model]()
-  * [Persistent Score Coordinator]()
-  * [Managed Object Context]()
- * [Fetching Data to the Core Data Stack]()
- * [Structuring a Core Data App]()
- * [Passing a Managed Object Context to View Controller in iOS]()
- * [Setting Up the Core Data Stack in AppDelegate for iOS]()
- * [Creating applicationDocumentsDirectory in iOS]()
- * [Creating managedObjectModel in iOS]()
- * [Creating persistenceStoreCoordinator in iOS]()
- * [Creating managedObjectContext in iOS]()
- * [Setting up the Core Data Stack in AppDelegate for OSX]()
- * [Creating applicationDocumentsDirectory in OSX]()
- * [Creating managedObjectModel in OSX]()
- * [Creating persistentStoreCoordinator in OSX]()
- * [Creating managedObjectContext in OSX]()
- * [Creating a Fetch Request in iOS]()
- * [Saving the Managed Object Context]()
- * [Saving in iOS]()
- * [Saving in OSX]()
- * [Working with NSManagedObject]()
- * [Creating a New NSManagedObject Instance]()
- * [Working with a Subclass of NSManagedObject]()
- * [Summary]()
+ * [Looking at the Core Data Stack]() [ ]
+  * [Managed Object Model]() [ ]
+  * [Persistent Score Coordinator]() [ ]
+  * [Managed Object Context]() [ ]
+ * [Fetching Data to the Core Data Stack]() [ ]
+ * [Structuring a Core Data App]() [ ]
+ * [Passing a Managed Object Context to View Controller in iOS]() [ ]
+ * [Setting Up the Core Data Stack in AppDelegate for iOS]() [ ]
+ * [Creating applicationDocumentsDirectory in iOS]() [ ]
+ * [Creating managedObjectModel in iOS]() [ ]
+ * [Creating persistenceStoreCoordinator in iOS]() [ ]
+ * [Creating managedObjectContext in iOS]() [ ]
+ * [Setting up the Core Data Stack in AppDelegate for OSX]() [ ]
+ * [Creating applicationDocumentsDirectory in OSX]() [ ]
+ * [Creating managedObjectModel in OSX]() [ ]
+ * [Creating persistentStoreCoordinator in OSX]() [ ]
+ * [Creating managedObjectContext in OSX]() [ ]
+ * [Creating a Fetch Request in iOS]() [ ]
+ * [Saving the Managed Object Context]() [ ]
+ * [Saving in iOS]() [ ]
+ * [Saving in OSX]() [ ]
+ * [Working with NSManagedObject]() [ ]
+ * [Creating a New NSManagedObject Instance]() [ ]
+ * [Working with a Subclass of NSManagedObject]() [ ]
+ * [Summary]() [ ]
 
 # 10. [Using SQLiteCore Data With Objective-C (iOS and Mac)](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [Looking at the Core Data Stack]()
-  * [Managed Object Model]()
-  * [Persistent Store Coordinator]()
-  * [Managed Object Context ]()
- * [Fetching Data to the Core Data Stack]()
- * [Objective-C Highlights]()
- * [Using Quoted Strings]()
- * [Objective-C is a messaging Language]()
- * [Using breaks in Objective -C]()
- * [Objective-C 2.0]()
- * [Chaining Messages]()
- * [Ending Statements with a Semicolon]()
- * [Separating Headers and Bodies in Objective-C]()
- * [Looking at Method Declarations]()
- * [Handling nil in Objective-C]()
- * [Structuring a Core Data App with Objective-C]()
- * [Passing a Managed Object Context to a View Controller]()
- * [Setting up the Core Data Stack in AppDelegate for iOS]()
- * [Creating the App Delegate Header]()
- * [Synthesizing Properties in AppDelegate.m]()
- * [Creating applicationDocumentsDirectory in iOS]()
- * [Creating managedObjectModel in iOS and OSX]()
- * [Creating persistentStoreCoordinator in iOS]()
- * [Creating managedObjectContext in iOS]()
- * [Setting up the Core Data Stack in AppDelegate for OSX]()
- * [Creating applicationDocumentary in OSX]()
- * [Creating managedObjectModel in OSX]()
- * [Creating persistentStoreCoordinator in OSX]()
- * [Creating managedObjectContext in OSX]()
- * [Creatng a Fetch Request in iOS]()
- * [Saving the Managed Object Context]()
- * [Saving in iOS]()
- * [Saving in OSX]()
- * [Working with NSManagedObject]()
- * [Creating a New NSManagedObject Instance]()
- * [Working with a Subclass of NSManagedObject]()
- * [Summary]()
+ * [Looking at the Core Data Stack]() [ ]
+  * [Managed Object Model]() [ ]
+  * [Persistent Store Coordinator]() [ ]
+  * [Managed Object Context ]() [ ]
+ * [Fetching Data to the Core Data Stack]() [ ]
+ * [Objective-C Highlights]() [ ]
+ * [Using Quoted Strings]() [ ]
+ * [Objective-C is a messaging Language]() [ ]
+ * [Using breaks in Objective -C]() [ ]
+ * [Objective-C 2.0]() [ ]
+ * [Chaining Messages]() [ ]
+ * [Ending Statements with a Semicolon]() [ ]
+ * [Separating Headers and Bodies in Objective-C]() [ ]
+ * [Looking at Method Declarations]() [ ]
+ * [Handling nil in Objective-C]() [ ]
+ * [Structuring a Core Data App with Objective-C]() [ ]
+ * [Passing a Managed Object Context to a View Controller]() [ ]
+ * [Setting up the Core Data Stack in AppDelegate for iOS]() [ ]
+ * [Creating the App Delegate Header]() [ ]
+ * [Synthesizing Properties in AppDelegate.m]() [ ]
+ * [Creating applicationDocumentsDirectory in iOS]() [ ]
+ * [Creating managedObjectModel in iOS and OSX]() [ ]
+ * [Creating persistentStoreCoordinator in iOS]() [ ]
+ * [Creating managedObjectContext in iOS]() [ ]
+ * [Setting up the Core Data Stack in AppDelegate for OSX]() [ ]
+ * [Creating applicationDocumentary in OSX]() [ ]
+ * [Creating managedObjectModel in OSX]() [ ]
+ * [Creating persistentStoreCoordinator in OSX]() [ ]
+ * [Creating managedObjectContext in OSX]() [ ]
+ * [Creatng a Fetch Request in iOS]() [ ]
+ * [Saving the Managed Object Context]() [ ]
+ * [Saving in iOS]() [ ]
+ * [Saving in OSX]() [ ]
+ * [Working with NSManagedObject]() [ ]
+ * [Creating a New NSManagedObject Instance]() [ ]
+ * [Working with a Subclass of NSManagedObject]() [ ]
+ * [Summary]() [ ]
 # 11. [Using the Simple Database with a PHP Web Site](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
 # 12. [Using the Simple Database with a Core Data/iOS App](https://github.com/c4arl0s/SQLiteForMobilDevelopers#sqliteformobildevelopers)
- * [The Story Continues...]()
- * [Adjusting the Data Model and Template for Core Data]()
- * [Getting Rid of Keys and Revising the Data Model]()
- * [Changing timeStamp to name]()
- * [Creating a New Database on your Device or Simulator]()
- * [Add the Score Table and Interface to the App]()
- * [Making sure you can Add new Users with  + in the Master View Controller]()
- * [Working with the Detail View]()
- * [Working with the Detail View for Score]()
- * [Use a Table View Controller for DetailViewController]()
- * [Modify DetailViewController Code for]()
- * [Change detail to detailUser]()
- * [Change configure cell to Use the subclass]()
- * [Modify MasterViewController to Pass the User to]()
- * [Summary]()
+ * [The Story Continues...]() [ ]
+ * [Adjusting the Data Model and Template for Core Data]() [ ]
+ * [Getting Rid of Keys and Revising the Data Model]() [ ]
+ * [Changing timeStamp to name]() [ ]
+ * [Creating a New Database on your Device or Simulator]() [ ]
+ * [Add the Score Table and Interface to the App]() [ ]
+ * [Making sure you can Add new Users with  + in the Master View Controller]() [ ]
+ * [Working with the Detail View]() [ ]
+ * [Working with the Detail View for Score]() [ ]
+ * [Use a Table View Controller for DetailViewController]() [ ]
+ * [Modify DetailViewController Code for]() [ ]
+ * [Change detail to detailUser]() [ ]
+ * [Change configure cell to Use the subclass]() [ ]
+ * [Modify MasterViewController to Pass the User to]() [ ]
+ * [Summary]() [ ]
 
 
 # SQLiteForMobilDevelopers
@@ -926,7 +926,113 @@ Toby|3
 ```
 
 # * [Changing a Name in One Table]()
+
+In order to change data that has been stored in a row of a table, you use the **UPDATE** command. Thus, if you want to change **TOBY** to **GEORGE** in the database, you would use syntax like the following:
+
+```sql
+sqlite> UPDATE scores
+   ...> SET name = "George"
+   ...> WHERE name = "Toby"
+   ...> ;
+```
+
+You are starting to see how SQL works. The basic clauses such as **WHERE** and **FROM** are used over and over again with the same syntax. The only thing that is new in this syntax is the **UPDATE** command which takes a single table name. Everything else here you have already seen. 
+
+If you try to return the queries from the previous section, you will see the data from **Users** and **Scores**
+
+```sql
+sqliteu select * from users;
+Rex|rex@champlainarts.com
+Anni|anni@champlainarts.com
+Toby|toby@champlainarts.com
+```
+
+```sql
+sqlite> select * from scores;
+Rex|0
+Anni|0
+George|0
+```
+
+If, in fact, George and Toby are two different people, It's correct that things don't work properly. But if it is the case that Toby has decided to go by his middle name of George now, George and Toby are actually the same person. How do you move all of Toby's data to George ?
+
+Retyping or using **UPDATE** is one way to handle this, but the better way is to use the build-in SQLite primary key as a **foreing key**.
+
 # * [Using a Foreign Key]()
+
+If you have followed along, you will be able to see the **rowid** and **name** values in both tables using the following syntax. For **Users**, here is the syntax. 
+
+```console
+$ sqlite3 RelationalDataBase 
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+```
+```console
+sqlite> select rowid, name from users;
+1|Rex
+2|Anni
+3|Toby
+sqlite> 
+```
+
+For Scores, this is the syntax:
+
+```console
+sqlite> select rowid, name from scores;
+1|Rex
+2|Anni
+3|George
+```
+
+The solution is to use a **foreing key**. A foreign key is a value in one table that identifies a row in another table. In this case, you want *rowid 3** in Users (Toby) to be used to match **rowid 3** in Scores (George). The names are different (George and Toby), but you want that relationship to work to reflect the fact that they are two different values for the same person.
+
+> Note. The fact that rowid 3 is the value you want to relate from one file to another is happenstance based on the sequence in which these files have been constructed. Later in this chapter, you will see how those numbers can have different values, but for now, you will probably see the same valus shown here.
+
+The solution is to create a new column - It is usually called **FK** or **Foreign Key** in the database world. Sometimes database designers give it a name that identifies its source such as **scorekey** or **scoredid** and **userkey** or **userid**. Thus, if you are looking at the Scores table, you could see the primary key or **rowid** along sidea separate **userkey**. If youu take the values of **rowid** in **Users** to be the starting point (since that is probably the first table to be created), you then want to have a matching value for **userid** in **Scores**.
+
+To add a column to an existing table, you use the **ALTER TABLE** command. You specify the name of the table to alter, the name of te column to add, and the type of the column. Here is the syntax to use to create a new column called **userid**
+
+```sql
+ALTER TABLE Scores ADD COLUMN userid integer;
+```
+
+To see the result of this command, use the **.schema** commandi n **sqlite3, (because it is a sqlite3 command, it starts with a period and does not required a semicolon at the end. The command takes one parameter which is the name of the table you want to examine. Here is the result if you run it now. You will see that **userid+* has been added.
+
+```console
+sqlite> .schema scores
+CREATE TABLE scores (
+Name char(128),
+score integer
+, userid integer);
+```
+
+Now you need to enter data for the **userid** column that you just added to **scores**. The **userid** values in **scores** should be the value of the corresponding record in **users**. At the moment they are the same, but you will soon change them.
+
+Here is the syntax to enter data for **rowid** in **scores**. Basically, this is the same way in which you changed the name from Toby to George.
+
+```console
+sqlite> update scores set userid = 1 where name = 'Rex';
+```
+
+```console
+sqlite> update scores set userid = 2 where name = 'Anni';
+```
+
+```console
+sqlite> update scores set userid = 3 where name = 'George';
+```
+
+For now, just verify that the data in **scores** is as shown here (both SQLite and Talbe 4-5)
+
+
+```console
+sqlite> select rowid, userid, name, score from scores;
+1|1|Rex|0
+2|2|Anni|0
+3|3|George|0
+```
+
+The names in this table are no longer relevant because the **relationship** between **scores** and **users** is based on **rowid** in the **users** matching **userid** in **scores**. In SQLite, the **ALTER TABLE** command does not let you drop a column: The recommended workaround is to drop the table and create a new one (more appropiately in many cases, export the data, import it to a new table, and then drop the old table). So, for now you can just ignore the **Name** column in **scores**. For your perspective, **scores** can look like Table 4-6 (even though there a is no-longer-needed column in the actual table).
 # * [Joining the Tables]()
 # * [Summary]()
 #
