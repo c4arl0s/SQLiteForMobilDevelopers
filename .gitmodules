@@ -1,0 +1,21 @@
+[submodule "1GettingUpToSpeedWithDatabasesAndSQLite"]
+	path = 1GettingUpToSpeedWithDatabasesAndSQLite
+	url = git@github.com:c4arl0s/1GettingUpToSpeedWithDatabasesAndSQLite.git
+[submodule "2UnderstandingWhatSQLiteIs"]
+	path = 2UnderstandingWhatSQLiteIs
+	url = git@github.com:c4arl0s/2UnderstandingWhatSQLiteIs.git
+[submodule "3UsingSQLiteBasicsStoringAndRetrievingData"]
+	path = 3UsingSQLiteBasicsStoringAndRetrievingData
+	url = git@github.com:c4arl0s/3UsingSQLiteBasicsStoringAndRetrievingData.git
+[submodule "4WorkingWithTheRelationalModelAndSQLite"]
+	path = 4WorkingWithTheRelationalModelAndSQLite
+	url = git@github.com:c4arl0s/4WorkingWithTheRelationalModelAndSQLite.git
+[submodule "5UsingSQLiteFeatures"]
+	path = 5UsingSQLiteFeatures
+	url = git@github.com:c4arl0s/5UsingSQLiteFeatures.git
+[submodule "8UsingSQLiteWithCoreData-iOS-OSX-"]
+	path = 8UsingSQLiteWithCoreData-iOS-OSX-
+	url = git@github.com:c4arl0s/8UsingSQLiteWithCoreData-iOS-OSX-.git
+[submodule "9UsingSQLite_CoreDataWithSwift"]
+	path = 9UsingSQLite_CoreDataWithSwift
+	url = git@github.com:c4arl0s/9UsingSQLite_CoreDataWithSwift.git
